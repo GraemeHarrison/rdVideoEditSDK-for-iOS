@@ -23,14 +23,12 @@
 		86872C481E6FBD4A0065597C /* IMG_0586.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 86872C3C1E6FBD4A0065597C /* IMG_0586.JPG */; };
 		86872C491E6FBD4A0065597C /* water_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C3D1E6FBD4A0065597C /* water_LOGO.png */; };
 		86872C4A1E6FBD4A0065597C /* waterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C3E1E6FBD4A0065597C /* waterImage.png */; };
-		86872C4B1E6FBD4A0065597C /* waterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C401E6FBD4A0065597C /* waterImage.png */; };
 		86872C4C1E6FBD4A0065597C /* 不启用_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C411E6FBD4A0065597C /* 不启用_@3x.png */; };
 		86872C4D1E6FBD4A0065597C /* 单选选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C421E6FBD4A0065597C /* 单选选中.png */; };
 		86872C4E1E6FBD4A0065597C /* 单选默认.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C431E6FBD4A0065597C /* 单选默认.png */; };
 		86872C4F1E6FBD4A0065597C /* 启用勾_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C441E6FBD4A0065597C /* 启用勾_@3x.png */; };
 		86872C501E6FBD4A0065597C /* 片尾caise_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C461E6FBD4A0065597C /* 片尾caise_LOGO.png */; };
 		86872C511E6FBD4A0065597C /* 片尾caise_LOGO_.png in Resources */ = {isa = PBXBuildFile; fileRef = 86872C471E6FBD4A0065597C /* 片尾caise_LOGO_.png */; };
-		86A66B141C7D5B350098E7D2 /* waterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A66B131C7D5B350098E7D2 /* waterImage.png */; };
 		86A66B1F1C7D616D0098E7D2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A66B1E1C7D616D0098E7D2 /* MobileCoreServices.framework */; };
 		86A66B271C7D623C0098E7D2 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A66B261C7D623C0098E7D2 /* libz.1.2.5.tbd */; };
 		86A66B2D1C7D62FC0098E7D2 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A66B2C1C7D62FC0098E7D2 /* libxml2.2.tbd */; };
@@ -86,14 +84,12 @@
 		86872C3C1E6FBD4A0065597C /* IMG_0586.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0586.JPG; sourceTree = "<group>"; };
 		86872C3D1E6FBD4A0065597C /* water_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water_LOGO.png; sourceTree = "<group>"; };
 		86872C3E1E6FBD4A0065597C /* waterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterImage.png; sourceTree = "<group>"; };
-		86872C401E6FBD4A0065597C /* waterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterImage.png; sourceTree = "<group>"; };
 		86872C411E6FBD4A0065597C /* 不启用_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不启用_@3x.png"; sourceTree = "<group>"; };
 		86872C421E6FBD4A0065597C /* 单选选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单选选中.png"; sourceTree = "<group>"; };
 		86872C431E6FBD4A0065597C /* 单选默认.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单选默认.png"; sourceTree = "<group>"; };
 		86872C441E6FBD4A0065597C /* 启用勾_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启用勾_@3x.png"; sourceTree = "<group>"; };
 		86872C461E6FBD4A0065597C /* 片尾caise_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "片尾caise_LOGO.png"; sourceTree = "<group>"; };
 		86872C471E6FBD4A0065597C /* 片尾caise_LOGO_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "片尾caise_LOGO_.png"; sourceTree = "<group>"; };
-		86A66B131C7D5B350098E7D2 /* waterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterImage.png; sourceTree = "<group>"; };
 		86A66B1E1C7D616D0098E7D2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		86A66B221C7D61930098E7D2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		86A66B261C7D623C0098E7D2 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -175,14 +171,12 @@
 				86872C3C1E6FBD4A0065597C /* IMG_0586.JPG */,
 				86872C3D1E6FBD4A0065597C /* water_LOGO.png */,
 				86872C3E1E6FBD4A0065597C /* waterImage.png */,
-				86872C3F1E6FBD4A0065597C /* waterlogo */,
 				86872C411E6FBD4A0065597C /* 不启用_@3x.png */,
 				86872C421E6FBD4A0065597C /* 单选选中.png */,
 				86872C431E6FBD4A0065597C /* 单选默认.png */,
 				86872C441E6FBD4A0065597C /* 启用勾_@3x.png */,
 				86872C451E6FBD4A0065597C /* 片尾 */,
 				8684B9B51DCAD450001488F3 /* testFile1.mov */,
-				86A66B121C7D5B350098E7D2 /* waterlogo */,
 				86672B9D1C15367C000D719E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -228,14 +222,6 @@
 			path = include;
 			sourceTree = "<group>";
 		};
-		86872C3F1E6FBD4A0065597C /* waterlogo */ = {
-			isa = PBXGroup;
-			children = (
-				86872C401E6FBD4A0065597C /* waterImage.png */,
-			);
-			path = waterlogo;
-			sourceTree = "<group>";
-		};
 		86872C451E6FBD4A0065597C /* 片尾 */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,14 +229,6 @@
 				86872C471E6FBD4A0065597C /* 片尾caise_LOGO_.png */,
 			);
 			path = "片尾";
-			sourceTree = "<group>";
-		};
-		86A66B121C7D5B350098E7D2 /* waterlogo */ = {
-			isa = PBXGroup;
-			children = (
-				86A66B131C7D5B350098E7D2 /* waterImage.png */,
-			);
-			path = waterlogo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +281,12 @@
 				TargetAttributes = {
 					86672B981C15367C000D719E = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = K8UMEY246Y;
+						DevelopmentTeam = L7DJNXX5JN;
 					};
 					86672BB11C15367C000D719E = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = L7DJNXX5JN;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 86672B981C15367C000D719E;
 					};
 				};
@@ -316,6 +296,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -343,8 +324,6 @@
 				8684B9B61DCAD450001488F3 /* testFile1.mov in Resources */,
 				8676079B1CC8E48200997BEC /* XpkUISDK.bundle in Resources */,
 				86872C491E6FBD4A0065597C /* water_LOGO.png in Resources */,
-				86A66B141C7D5B350098E7D2 /* waterImage.png in Resources */,
-				86872C4B1E6FBD4A0065597C /* waterImage.png in Resources */,
 				86872C4E1E6FBD4A0065597C /* 单选默认.png in Resources */,
 				86672BA91C15367C000D719E /* Assets.xcassets in Resources */,
 				86872C501E6FBD4A0065597C /* 片尾caise_LOGO.png in Resources */,
@@ -437,7 +416,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "188fc5df-96ba-4bd0-b0dd-e8fa9754a334";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,7 +459,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "188fc5df-96ba-4bd0-b0dd-e8fa9754a334";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -502,6 +479,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = L7DJNXX5JN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,10 +552,16 @@
 		86672BBF1C15367C000D719E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7DJNXX5JN;
 				INFOPLIST_FILE = XpkUiSDKDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XpkUiSDKDemo.XpkUiSDKDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_TARGET_NAME = XpkUiSDKDemo;
 				USES_XCTRUNNER = YES;
 			};
@@ -586,10 +570,16 @@
 		86672BC01C15367C000D719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7DJNXX5JN;
 				INFOPLIST_FILE = XpkUiSDKDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XpkUiSDKDemo.XpkUiSDKDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_TARGET_NAME = XpkUiSDKDemo;
 				USES_XCTRUNNER = YES;
 			};
