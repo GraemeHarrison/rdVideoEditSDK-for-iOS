@@ -169,7 +169,7 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     UIInterfaceOrientation deviceOrientation = [UIApplication sharedApplication].statusBarOrientation;
     if(deviceOrientation == UIInterfaceOrientationLandscapeLeft || deviceOrientation == UIInterfaceOrientationLandscapeRight){
         if(self.navigationController.visibleViewController == self){
-            NSLog(@"横向");
+            NSLog(@"Horizontal");
             self.navigationController.navigationBarHidden = NO;//emmet20160829
             self.navigationController.navigationBar.translucent = NO;
             [self.navigationController setNavigationBarHidden:NO];
@@ -208,7 +208,7 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     }
     else if(deviceOrientation == UIInterfaceOrientationPortrait || deviceOrientation == UIInterfaceOrientationPortraitUpsideDown){
         if(self.navigationController.visibleViewController == self){
-            NSLog(@"纵向");
+            NSLog(@"Portrait");
             self.navigationController.navigationBarHidden=NO;//emmet20160829
             self.navigationController.navigationBar.translucent=NO;
             [self.navigationController setNavigationBarHidden: NO];
@@ -262,23 +262,23 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
         
         _xpkSDK.editConfiguration.customizationPROPORTIONTYPE                = RDPROPORTIONTYPE_AUDIO;
         
-        //定长截取设置
+        //Fixed length intercept setting
         _xpkSDK.editConfiguration.trimMinDuration                 = 12.0;
         _xpkSDK.editConfiguration.trimMaxDuration                 = 30.0;
         _xpkSDK.editConfiguration.defaultSelectMinOrMax       = kRDDefaultSelectCutMax;
         
         
-        //拍摄设置
+        //Shooting settings
         _xpkSDK.cameraConfiguration.cameraRecordSizeType        = RecordVideoTypeMixed;
         _xpkSDK.cameraConfiguration.cameraRecordOrientation     = RecordVideoOrientationAuto;
         _xpkSDK.cameraConfiguration.cameraCollocationPosition   = CameraCollocationPositionBottom;
         NSString * exportPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/recordVideoFile.mp4"];
         _xpkSDK.cameraConfiguration.cameraOutputPath = exportPath;
         
-        //编辑导出设置
+        //Edit export settings
         _xpkSDK.exportConfiguration.videoBitRate   = VideoAverageBitRate;
         _xpkSDK.exportConfiguration.endPicDisabled = false;
-        _xpkSDK.exportConfiguration.endPicUserName = @"疯狂熊猫人";//@"秀拍客";
+        _xpkSDK.exportConfiguration.endPicUserName = @"Crazy Pandaren";//@"Show shooter";
         _xpkSDK.exportConfiguration.endPicImagepath = [[NSBundle mainBundle] pathForResource:@"片尾caise_LOGO" ofType:@"png"];
         
         _xpkSDK.exportConfiguration.waterDisabled = false;
@@ -310,7 +310,7 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     [switchBtn setOn:(_xpkSDK.editConfiguration.enableWizard ? YES : NO)];
     [endPicDisabledBtn setSelected:(!_xpkSDK.exportConfiguration.endPicDisabled ? NO : YES)];
     [waterSettingBtn setSelected:(!_xpkSDK.exportConfiguration.waterDisabled ? NO : YES)];
-    wizardLabel.text = _xpkSDK.editConfiguration.enableWizard ?  @"开启向导模式": @"关闭向导模式";
+    wizardLabel.text = _xpkSDK.editConfiguration.enableWizard ?  @"Start wizard mode": @"Turn off wizard mode";
     
 }
 
@@ -336,7 +336,7 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     
     UIButton *qiehuanBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     qiehuanBtn.backgroundColor = [UIColor cyanColor];
-    [qiehuanBtn setTitle:@"切换" forState:UIControlStateNormal];
+    [qiehuanBtn setTitle:@"Switch" forState:UIControlStateNormal];
     [qiehuanBtn setTitleColor:UIColorFromRGB(0x0e0e10) forState:UIControlStateNormal];
     [qiehuanBtn addTarget:self action:@selector(qiehuanBtnTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
     qiehuanBtn.frame = CGRectMake(0, 0, 50, 35);
@@ -354,10 +354,10 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     
     
     if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"kuwawnenbledLock"] boolValue]){
-        self.title = @"iOS视频编辑SDK-Demo";
+        self.title = @"iOSVideo editingSDK-Demo";
         
     }else{
-        self.title = @"酷玩";
+        self.title = @"Cool play";
         
     }
     
@@ -380,33 +380,33 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     
     
     
-    [functions_1 addObject:@"方式一:(正方形录制)"];
-    [functions_1 addObject:@"方式二:(长方形录制)"];
-    [functions_1 addObject:@"方式三:(正方形与长方形,可切换)"];
+    [functions_1 addObject:@"Method 1: (square recording)"];
+    [functions_1 addObject:@"Method 2: (rectangular recording)"];
+    [functions_1 addObject:@"Method 3: (square and rectangle, switchable)"];
     
-    [functions_Dic1 setObject:@"录制功能" forKey:@"title"];
+    [functions_Dic1 setObject:@"Recording function" forKey:@"title"];
     [functions_Dic1 setObject:functions_1 forKey:@"functionList"];
     
-    [functions_2 addObject:@"方式一:直接进入编辑"];
-    [functions_2 addObject:@"方式二:选择相册(不需要扫描)"];
-    [functions_2 addObject:@"方式三:选择相册(需要扫描)"];
+    [functions_2 addObject:@"Method 1: directly enter the editor"];
+    [functions_2 addObject:@"Method 2: Select an album (no need to scan)"];
+    [functions_2 addObject:@"Method 3: Select an album (need to scan)"];
     
-    [functions_Dic2 setObject:@"视频编辑" forKey:@"title"];
+    [functions_Dic2 setObject:@"Video editing" forKey:@"title"];
     [functions_Dic2 setObject:functions_2 forKey:@"functionList"];
     
-    [functions_3 addObject:@"方式一:返回截取后的路径"];
-    [functions_3 addObject:@"方式二:返回开始时间和结束时间"];
-    [functions_3 addObject:@"方式三:自定义返回类型"];
-    [functions_3 addObject:@"方式四:自由截取"];
+    [functions_3 addObject:@"Method 1: Return the intercepted path"];
+    [functions_3 addObject:@"Method 2: Return to start time and end time"];
+    [functions_3 addObject:@"Method 3: Customize the return type"];
+    [functions_3 addObject:@"Method 4: Free interception"];
     
-    [functions_Dic3 setObject:@"视频截取" forKey:@"title"];
+    [functions_Dic3 setObject:@"Video capture" forKey:@"title"];
     [functions_Dic3 setObject:functions_3 forKey:@"functionList"];
     
-    [functions_4 addObject:@"视频+图片"];
-    [functions_4 addObject:@"仅视频"];
-    [functions_4 addObject:@"仅图片"];
+    [functions_4 addObject:@"Video + picture"];
+    [functions_4 addObject:@"Video only"];
+    [functions_4 addObject:@"Picture only"];
     
-    [functions_Dic4 setObject:@"选择相册" forKey:@"title"];
+    [functions_Dic4 setObject:@"Choose Album" forKey:@"title"];
     [functions_Dic4 setObject:functions_4 forKey:@"functionList"];
     
     
@@ -765,12 +765,12 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
     if(index == 3){
         [_xpkSDK trimVideoWithSuperController:self
                            controllerTrimMode:TRIMMODENOTSPECIFYTIME
-                              controllerTitle:@"修剪片段"
+                              controllerTitle:@"Trim the clip"
                               backgroundColor:UIColorFromRGB(0x27262c)
-                            cancelButtonTitle:@"取消"
+                            cancelButtonTitle:@"cancel"
                        cancelButtonTitleColor:UIColorFromRGB(0xffffff)
                   cancelButtonBackgroundColor:UIColorFromRGB(0x000000)
-                             otherButtonTitle:@"下载选中片段"
+                             otherButtonTitle:@"Download selected clips"
                         otherButtonTitleColor:UIColorFromRGB(0xffffff)
                    otherButtonBackgroundColor:UIColorFromRGB(0x00000)
                                     assetPath:path
@@ -812,7 +812,7 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
             
             //方式三：用户自定义提示框
             *cutType = RDCutVideoReturnTypeAuto;
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"请选择" delegate:weakSelf cancelButtonTitle:@"返回路径" otherButtonTitles:@"返回时间", nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"please choose" delegate:weakSelf cancelButtonTitle:@"Return path" otherButtonTitles:@"time of return", nil];
             alert.tag = 200;
             [alert show];
             //            }
@@ -822,12 +822,12 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
         
         [_xpkSDK trimVideoWithSuperController:self
                            controllerTrimMode:TRIMMODESPECIFYTIME
-                              controllerTitle:@"修剪片段"
+                              controllerTitle:@"Trim the clip"
                               backgroundColor:UIColorFromRGB(0x27262c)
-                            cancelButtonTitle:@"取消"
+                            cancelButtonTitle:@"cancel"
                        cancelButtonTitleColor:UIColorFromRGB(0xffffff)
                   cancelButtonBackgroundColor:UIColorFromRGB(0x000000)
-                             otherButtonTitle:@"下载片段"
+                             otherButtonTitle:@"Download clip"
                         otherButtonTitleColor:UIColorFromRGB(0xffffff)
                    otherButtonBackgroundColor:UIColorFromRGB(0x00000)
                                     assetPath:path
@@ -869,7 +869,7 @@ NSString *const APPSECRET = @"3ac8a8b40ce5bd5c37642978ef097731TDgMqucwJLGDvj09ws
                 
                 //方式三：用户自定义提示框
                 *cutType = RDCutVideoReturnTypeAuto;
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"请选择" delegate:weakSelf cancelButtonTitle:@"返回路径" otherButtonTitles:@"返回时间", nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"please choose" delegate:weakSelf cancelButtonTitle:@"Return path" otherButtonTitles:@"time of return", nil];
                 alert.tag = 200;
                 [alert show];
             }
